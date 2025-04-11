@@ -1,13 +1,49 @@
+/*font-family: "National Park", sans-serif;*/
+/*font-family: "Dancing Script", cursive;*/
+
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-    background-color: darkgrey;
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    font-display: block;
+    background-color: rgb(194, 228, 240);
     text-align: center;
+}
+
+.portada{
+    background-color: lightblue;
+    width: 1600px;
+    height: 480px;
+    padding: 25px;
+    border-radius: 30px;
+    border-radius: 30px 0;
+    box-shadow: 0 0 10px rgb(14, 14, 68);
+}
+
+.datos{
+    padding: 25px;
+    width: 1600px;
+    height: 40px;
+    font-family: "National Park", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    columns: 3;
+    column-gap: 100px;
+}
+
+.sobremi{
+    background-color: rgb(194, 228, 240);
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.sobremi p{
+    margin: 0;
+    
 }
 
 h3 { 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 p{
@@ -17,8 +53,8 @@ p{
 }
 
 li{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-family: "National Park", sans-serif;
+    font-size: 18px;
     }
 
 ul{
