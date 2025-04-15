@@ -1,0 +1,74 @@
+.contenedor1{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;  
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.rojo{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.azul{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.verde{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.contenedor2{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contenedor2 div{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor3{
+    width: 1000px;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.contenedor3 div{
+    height: 100px;
+    width: 100px;
+    display: inline-flex;
+    justify-content: center;
+}
+
