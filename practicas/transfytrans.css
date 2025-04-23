@@ -1,0 +1,41 @@
+.transformaciones {
+    background: grey;
+    height: 300px;
+    width: 300p;
+}
+
+.circulo {
+    background: darkorchid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transform: scale(5); /*scale*/
+
+}
+
+.cuadrado {
+    background: aquamarine;
+    width: 100px;
+    height: 100px;
+    transform: rotate(35deg); /*rotate*/
+    /*transform: scale(1,2);/*scale*/ 
+}
+
+.transiciones {
+    background: lightpink;
+    height: 300px;
+    width: 300p;
+}
+
+
+.transiciones .circulo{
+    transform: translate(50px, 100px);
+}
+
+.transiciones .circulo:hover{
+    background-color: bisque; /*hover*/
+}
+
+.transiciones .cuadrado {
+    transform: translateX(200px);
+}
