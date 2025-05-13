@@ -1,0 +1,167 @@
+/*font-family: "Open Sans", sans-serif;*/
+
+/*base */
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 25px; /*alto de barra de nav*/
+}
+
+header{
+    background-color: green;
+    padding: 15x 0;
+}
+
+header h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 100; /*peso de fuente*/
+    font-style: italic;
+    display: inline-block; /*en linea con la imagen*/
+    position: relative;
+    bottom: 1px;
+    margin-left: 25px;
+}
+
+nav{
+    background-color: #055339;
+    margin-bottom: 25px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    flex-grow: 1;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer{
+    background-color: #64806c;
+    clear: both;
+    color: #2d3630;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 25px;
+}
+
+nav ul li a.activo { /*a.activo siempre va junto sin espacio para cuando cambio de lugar la clase */
+    background-color: green; 
+    font-style:normal;
+    color: #2d3630;
+    font-size: 20px;
+}
+
+.holder{ /*le doy espacio a la pagina desde el margen*/
+    max-width: 1250px;
+    margin: 5px; auto;
+}
+
+/*fin base*/
+
+/*solapa home*/
+.bienvenidos {
+    background-color: rgba(193, 243, 193, 0.250);
+    text-align: justify;
+     width: 100%;
+    /*padding-right: 10px;*/
+    box-sizing: border-box;
+}
+
+.bienvenidos p{
+    font-size: 15px;
+    margin: 15px;
+}
+
+h3{
+    color: green;
+    font-weight: 300;
+}
+
+.icono {
+      font-size: 2rem;
+}
+
+.card {
+      border-color: green;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover{
+    background-color: #e6f4ea; /* un verde claro */
+    transform: translateY(-5px); /* levanta un poco la tarjeta */
+}
+    
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+/*Fin solapa Home*/
+
+
+/*inicio Nosotros*/
+
+h3{
+    color: green;
+    font-weight: 300;
+}
+
+.historia{
+    font-size: 14px;
+    background-color: rgba(193, 243, 193, 0.250);
+}
+
+.personas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.persona {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.persona p{
+    color: #666;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.persona h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.persona h6{
+    color: #055339;
+    font-size: 13px;
+    font-style: italic;
+
+}
+
+.persona img{
+    border-radius: 25%;
+    max-width: 75%;
+    box-shadow: 0 0 5px #2d3630;
+}
+/*fin Nosotros*/
