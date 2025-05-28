@@ -1,0 +1,35 @@
+.cuadrados {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#rosa{
+    background-color:rgb(231, 88, 167);
+}
+
+#celeste{
+    background-color: rgb(79, 152, 235);
+}
+
+#lila{
+    background-color: rgb(190, 157, 243);
+}
+
+/* ej 2*/
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:oblique;
+    color:lightgrey;
+    font-size: 18px;
+}
+
+textarea{
+    width: 250px;
+    height: 250px;
+    resize: none;
+    background-color: rgb(175, 221, 221);
+}
+
+/* fin ej 2*/

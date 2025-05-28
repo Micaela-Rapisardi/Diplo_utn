@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1</title>
+  <link rel="stylesheet" href="m3u4ej1.css">
+</head>
+
+<body>
+
+  <!-- Ejercicio 1-->
+  <div id="rosa" class="cuadrados"></div>
+  <div id="celeste" class="cuadrados"></div>
+  <div id="lila" class="cuadrados"></div>
+
+  <!-- Ejercicio 2-->
+  <div>
+    <h2>Contame algo:</h2>
+    <textarea id="miTextarea" placeholder="Escribí tu texto aquí..."></textarea>
+    <p>Caracteres: <span id="contador">0</span></p>
+  </div>
+
+  <div>
+    <h2>Lista de alumnos aprobados</h2>
+    <ul id="lista-aprobados"></ul>
+  </div>
+
+  <script>
+    //ejercicio 1
+    const rosa = document.getElementById('rosa');
+    const celeste = document.getElementById('celeste');
+    const lila = document.getElementById('lila');
+
+    rosa.addEventListener("click", function () {
+      document.body.style.backgroundColor = "rgb(231, 88, 167)";
+    });
+
+    celeste.addEventListener("click", function () {
+      document.body.style.backgroundColor = "rgb(79, 152, 235)";
+    });
+
+    lila.addEventListener("click", function () {
+      document.body.style.backgroundColor = "rgb(190, 157, 243)";
+    });
+
+    //ejercicio 2
+
+    const textarea = document.getElementById("miTextarea");
+    const contador = document.getElementById("contador");
+
+    textarea.addEventListener("input", function () {
+      const cantidad = textarea.value.length;
+      contador.textContent = cantidad;
+    });
+
+    // ejercicio 3
+    const alumnos = [
+      { nombre: 'Juan Gomez', nota: 7 },
+      { nombre: 'Pedro Rodriguez', nota: 4 },
+      { nombre: 'Roxana García', nota: 8 },
+      { nombre: 'Luciano Lopez', nota: 5 },
+      { nombre: 'Fernanda Gimenez', nota: 6 },
+      { nombre: 'Florencia Martinez', nota: 10 },
+      { nombre: 'Raul Sanchez', nota: 7 },
+      { nombre: 'Sandra Figueroa', nota: 8 }
+    ];
+
+    const aprobados = alumnos.filter(alumno => alumno.nota >= 7);
+
+    const listaHTML = aprobados
+      .map(alumno => `<li>${alumno.nombre} - Nota: ${alumno.nota}</li>`)
+      .join('');
+
+    document.getElementById("lista-aprobados").innerHTML = listaHTML;
+
+  </script>
+</body>
+
+</html>
