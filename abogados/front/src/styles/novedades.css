@@ -1,0 +1,11 @@
+.novedades h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #055339;
+}
+
+.novedades h5{
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
+}

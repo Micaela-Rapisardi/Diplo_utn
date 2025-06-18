@@ -1,0 +1,12 @@
+.galeria{
+    display:inline-table;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.galeria img{
+    width: 25%;
+    padding: 0.3em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 25px; /*alto de barra de nav*/
+}
+
+header{
+    background-color: green;
+    padding: 15x 0;
+}
+
+header h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 100; /*peso de fuente*/
+    font-style: italic;
+    display: inline-block; /*en linea con la imagen*/
+    position: relative;
+    bottom: 1px;
+    margin-left: 25px;
+}
+
+nav{
+    background-color: #055339;
+    margin-bottom: 25px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    flex-grow: 1;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer{
+    background-color: #64806c;
+    clear: both;
+    color: #2d3630;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 25px;
+}
+
+nav ul li a.activo { /*a.activo siempre va junto sin espacio para cuando cambio de lugar la clase */
+    background-color: green; 
+    font-style:normal;
+    color: #2d3630;
+    font-size: 20px;
+}
+
+.holder { /*le doy espacio a la pagina desde el margen*/
+    max-width: 1250px;
+    margin: 5px auto;
+}
+
+/*fin base*/
+
+/* multi pantalla*/
+@media (max-width: 768px) {
+    .contacto {
+        flex-direction: column;
+    }
+
+    .contacto > div {
+        flex: 1 1 100%;
+    }
+
+    .formulario p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formulario p label {
+        min-width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .formulario input[type="submit"] {
+        left: 0; 
+        margin-top: 1rem;
+    }
+}
