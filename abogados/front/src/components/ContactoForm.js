@@ -6,7 +6,7 @@ export default function ContactoForm() {
             <form action="" method="" class="formulario">
                 <p>
                     <label for="nombre">Apellido y nombre</label>
-                    <input type="text" name=""/>
+                    <input type="text" id="name"/>
                 </p>
                 <p>
                     <label for="telefono">Teléfono</label>
