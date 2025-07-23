@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import Nav from "@/components/Nav";
-//import Header from '@/components/Header';
+import Header from '@/components/Header';
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "B&DM Abogados",
@@ -11,21 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body>
-        <header>
-          <div className="holder">
-            <img src="/img/logoB&DM.jpg" alt="Logo" width="100" />
-            <h1>B&DM Abogados</h1>
-          </div>
-          {/*<Header/>  {/* Acá se inserta el menú */}
-        </header>
-
-        <Nav/>
-
-        {children}
-
-        <footer>
-          <p>Derechos reservados. B&DM Abogados 2025</p>
-        </footer>
+          <Header/>  
+          <Nav/>
+          {children}
+          <Footer/>
       </body>
     </html>
   );

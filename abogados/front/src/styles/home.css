@@ -1,8 +1,51 @@
 .bienvenidos {
+    background-color: #849c9c30;
+    text-align: justify;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bienvenidos p{
+    font-size: 15px;
+    margin: 15px;
+}
+
+h3{
+    color: #114434;
+    font-weight: 300;
+}
+
+.card {
+      border-color: #104434;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    background-color: #10443448; /* un verde claro */
+    transform: translateY(-5px); /* levanta un poco la tarjeta */
+}
+
+.icono img {
+    color: #104434;
+    transition: 0.3s ease;
+}
+
+.card:hover .icono img {
+    filter: none;
+    transform: scale(1.1);
+}
+
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*.bienvenidos {
     background-color: rgba(193, 243, 193, 0.250);
     text-align: justify;
-     width: 100%;
-    /*padding-right: 10px;*/
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -27,11 +70,11 @@ h3{
 
 .card:hover{
     background-color: #e6f4ea; /* un verde claro */
-    transform: translateY(-5px); /* levanta un poco la tarjeta */
-}
+    /*transform: translateY(-5px); /* levanta un poco la tarjeta */
+/*}
     
 
 .columnas{
     display: flex;
     justify-content: space-between;
-}
+} */

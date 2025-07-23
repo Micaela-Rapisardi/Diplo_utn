@@ -1,0 +1,40 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/styles/home.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+.bienvenidos {
+    background-color: rgba(193, 243, 193, 0.250);
+    text-align: justify;
+     width: 100%;
+    /*padding-right: 10px;*/
+    box-sizing: border-box;
+}
+
+.bienvenidos p{
+    font-size: 15px;
+    margin: 15px;
+}
+
+h3{
+    color: green;
+    font-weight: 300;
+}
+
+.icono {
+      font-size: 2rem;
+}
+
+.card {
+      border-color: green;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover{
+    background-color: #e6f4ea; /* un verde claro */
+    transform: translateY(-5px); /* levanta un poco la tarjeta */
+}
+    
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
